@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+        $('#btnD').click(function(e) {
+            btnDClick(e);  // 再開ボタンのイベント
+        });
         init();
     });
     
@@ -163,7 +167,7 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
-        
+        $('#btnD').prop('disabled', false);
     }
 
     // Alarmの処理
@@ -201,6 +205,13 @@
         $("#time").html("経過時間：　 0" );
         $("#remain").html("残り時間：　"+ period);
     }
+
+     function btnDClick(e) {
+        if (!active && rest > 0) {  // タイマーが停止中で残り時間がある場合
+            active = true;
+            startTime = new Date() - (etime * 1000);  // 停止していた時間を考慮して再開
+        }
+    }
     
  
     // 繰り返し実行する処理
@@ -235,6 +246,7 @@
     <button id="btnA">ButtonA</button>  
     <button id="btnB">ButtonB</button>  
     <button id="btnC">ButtonC</button>  
+    <button id="btnD">再開</button> <!-- 再開ボタン追加 -->
     <input type="number" id="minute" value=3 >
     <input type="number" id="second" value=0 >
 </body>
