@@ -51,9 +51,10 @@
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
+    
     
     #minute {
         font-size: 30px;
@@ -66,3 +67,7 @@
     }
     
     input[type=number] {text-align: right;}
+
+    #btnD {
+        font-size: 20px;
+        position:absolute; top:600px; left:70%; width:28%; height:60px; 
