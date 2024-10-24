@@ -172,6 +172,7 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
+        $('#btnE').prop('disabled', false);
     }
 
     // Alarmの処理
@@ -181,7 +182,7 @@
         var img = new Image();
         img.src = "ksuisbg.gif";
         img.onload = function(){
-            cxt.drawImage(img,0,0,300,300);
+            cxt.drawImage(img,0,0,400,400);
         };
         var audio = new Audio();
         audio.src = "pin.wav";
@@ -218,8 +219,13 @@
     }
     
     function btnEClick(e) {
-
-
+    var canvas = $("#mycanvas")[0]; // キャンバス要素を取得
+    var ctx = canvas.getContext("2d"); // コンテキストを取得
+    var img = new Image(); // 新しいImageオブジェクトを作成
+    img.src = "bakuhatsu.png"; // 画像のソースを指定
+    img.onload = function() {
+        ctx.drawImage(img, 30, 200, 300, 300); // 画像をキャンバスに描画
+    };
     }
  
     // 繰り返し実行する処理
@@ -244,7 +250,7 @@
   </script>
 </head>
 <body>
-    <canvas id="mycanvas" width="200" height="200">Test</canvas>
+    <canvas id="mycanvas" width="400" height="400">Test</canvas>
 
     <div id="minuteStr">〇</div>
     <div id="secondStr">〇</div>
