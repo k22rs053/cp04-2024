@@ -41,16 +41,22 @@
     }
     
     #btnA {
+        background-color: royalblue;
+        color: rgb(253, 251, 249);
         font-size: 20px;
         position:absolute; top:380px; left:2%; width:43%; height:60px; 
     }
     
     #btnB {
+        background-color: red;
+        color: yellow;
         font-size: 20px;
         position:absolute; top:380px; left:45%; width:25%; height:60px; 
     }
 
     #btnC {
+        background-color: lightblue;
+        color: black;
         font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
@@ -69,5 +75,7 @@
     input[type=number] {text-align: right;}
 
     #btnD {
+        background-color: rebeccapurple;
+        color: greenyellow;
         font-size: 20px;
         position:absolute; top:600px; left:70%; width:28%; height:60px; 
