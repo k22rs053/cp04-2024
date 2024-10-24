@@ -74,8 +74,18 @@
     
     input[type=number] {text-align: right;}
 
+    #btnE{
+        background-color: yellow;
+        color: black;
+        font-size: 30px;
+        position:absolute; top:600px; left:2%; width:68%; height:60px; 
+
+    }
+
     #btnD {
         background-color: rebeccapurple;
         color: greenyellow;
         font-size: 20px;
         position:absolute; top:600px; left:70%; width:28%; height:60px; 
+
+    

@@ -42,6 +42,10 @@
         $('#btnD').click(function(e) {
             btnDClick(e);  // 再開ボタンのイベント
         });
+
+        $('#btnE').click(function(e) {
+            btnEClick(e);  // ？ボタンのイベント
+        });
         init();
     });
     
@@ -213,6 +217,10 @@
         }
     }
     
+    function btnEClick(e) {
+
+
+    }
  
     // 繰り返し実行する処理
     function timer(){  
@@ -247,6 +255,7 @@
     <button id="btnB">ストップ</button>  
     <button id="btnC">リセット</button>  
     <button id="btnD">再開</button> <!-- 再開ボタン追加 -->
+    <button id="btnE">絶対に押すな</button>
     <input type="number" id="minute" value=3 >
     <input type="number" id="second" value=0 >
 </body>
